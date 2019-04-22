@@ -1,0 +1,128 @@
+body{
+  font-family: "verdana";
+  background-image: url("notepad.jpg");
+}
+
+#todolist {
+  width: 60%;
+  margin : 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3vw;
+  border: 2.5px solid grey;
+}
+
+@media (max-width: 800px){
+  #todolist{
+    width: 90%;
+  }
+}
+
+#todolist #newtodo #newtitle{
+  width:90%;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1vw;
+}
+
+#todolist #newtodo #newtitle:focus{
+  outline: none;
+}
+
+#todolist #newtodo #newSubmit{
+  background-color: hsl(220, 100%, 60%);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  float: right;
+  position: relative;
+  top: 5px;
+}
+
+#todolist #newtodo #newSubmit:hover{
+  background-color: hsl(220, 100%, 50%);
+}
+
+#todolist #newtodo #newSubmit:active{
+  background-color: black ;
+}
+
+#todolist .todo{
+  font-size: 30px;
+  padding: 20px 0px;
+  border-bottom: 1px dotted #aaa;
+}
+
+#todolist .todo:last-of-type {
+  border-bottom: none;
+}
+
+
+#todolist .todo p {
+  display: inline-block;
+  margin: 0px;
+  max-width: 80%;
+}
+
+#todolist .todo button{
+  background: none;
+  position: relative;
+  bottom: -2px;
+  color: white;
+}
+
+#todolist .todo .check {
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#todolist .todo .check:hover {
+  background-color: yellow;
+}
+
+#todolist .todo .check:active{
+  background-color: hsl(180, 50%, 60%);
+}
+
+#todolist .todo.completed {
+  color: grey;
+  font-weight: lighter;
+}
+
+#todolist .todo.completed p {
+  text-decoration : line-through;
+}
+
+#todolist .todo.completed .check {
+  background-color: black;
+  border: none;
+}
+
+#todolist .todo .delete{
+  float: right;
+  border: none;
+  font-size: 30px;
+  padding: 5px 10px;
+  width: 30px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+#todolist .todo .delete:hover {
+  background-color: hsl(0, 50%, 50%);
+}
+
+#todolist .todo .delete:active {
+  background-color: hsl(0, 50%, 40%);
+}

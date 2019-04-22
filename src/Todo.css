@@ -121,3 +121,11 @@ body {
 #todos .todo .delete:active {
     background-color: hsl(0, 50%, 40%);
 }
+
+.sortBtn {
+    color: blue;
+    float: right;
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+}
